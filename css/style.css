@@ -1,264 +1,301 @@
-body {background:#sss;}
+body {
+	background-image: url(../img/fonnn.jpg);
+	font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #555555;
+	text-align: center;
+	}
 #fonn {
-	height: 2660px;
+	height: 4380px;
 	width: 1020px;
+	background-image: url(../img/kora.jpg);
+	padding-bottom: 10px;
+	padding-top: 10px;
 	margin-right: auto;
 	margin-left: auto;
 	margin-bottom: 10px;
-    background-color: #e0e0c0;
 }
-#logo {
-	height: 120px;
-	width: 1020px;
-    background-image: url(../img/fonlogo.jpg);
-}
-#logotip {
-	height: 120px;
-	width: 320px;
-    float: left;
-    background-image: url(../img/logotip.png);
-}
-#telefon {
-	height: 80px;
-	width: 320px;
-	padding-left: 700px;
-	padding-top: 40px;
-	font-size: 22pt;
-}
-
-
-#navigacia {
-	height:  80px;
-	width: 1020px;
-    background-color: #ff5325;
-}
-#Nglavnaya {
-	height: 80px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Nuslugi {
-	height: 80px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Ntehnika {
-	height: 80px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Ntelefon {
-	height: 80px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#pusto {
-	height: 80px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-
-
-
-
-#galereya {
-	height: 600px;
-	width: 1020px;
-    background-color: #eed5c0;
-}
-
-
-
-#uslugi {
-	height: 540px;
+#telo {
+    height: 4380px;
 	width: 1000px;
-    background-color: #000
-}
-#golova1 {
-	height: 70px;
-	width: 960px;
-    background-color: #fdf;
-    float: left;
-	margin-left:  50px;
-	margin-right: 40px;
-}
-#kran {
-	height: 400px;
-	width: 250px;
-    background-color: #ddd;
-    float: left;
-}
-#bur {
-	height: 400px;
-	width: 250px;
-    background-color: #eee;
-    float: left;
-}
-#perevoz {
-	height: 400px;
-	width: 250px;
-    background-color: #ccc;
-    float: left;
-}
-#eskav {
-	height: 400px;
-	width: 250px;
-    background-color: #aaa;
-    float: left;
-}
-#knopkaone {
-	height: 70px;
-	background-color: red;
-	float: left;
-	padding: 0px;
+	background-color: #e0e0c0;
+	margin-right: auto;
+	margin-left: auto;
 	
-	width: 1020px;
 }
+.logo {
+    height: 180px;
+	width: 1000px;
+    background-color: #e0e0c0;
 
-#knopkaone button{
-/*	padding-left: 00px;*/
-	margin-top: 15px;
-	margin-left: 900px;
-	border-radius: 8px;
-	height: 40px;
+}
+#logo1 {
+	margin: 10px;
+	height: 160px;
+	width: 300px;
+	float: left;
+	text-align: center;
+	font-size: 18px;
+}
+#optovie {
+	margin-left:10px;
+	text-align: left;
+	color: #111;
+}
+#severo {
+	margin-right:10px;
+	text-align: right;
 	color: #000;
-	background-color: #08cc0f;
-	cursor: pointer;
 }
-
-#knopkaone button:hover{
-	color: red;
-	background-color: yellow;
-}	
-.usl1img {
+#logo2 {
+	padding-top: 10px;
+    height: 170px;
+	width: 380px;
+	float: left;
+	text-align: left;
+}
+#exp1 {
+	padding-top: 15px;
+	margin-left: 10px;
 	height: 160px;
-	width: 210px;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 120px;
+	padding-left: 10px;
+	font-style: italic;
+	float: left;
 }
-.usl1text {
-	height: 240px;
-	width: 210px;
-	margin-left: 20px;
-	margin-right: 20px;
+#exp2 {
+	padding-top: 15px;
+	height: 160px;
+	width: 90px;
+	padding-left: 10px;
+	font-style: italic;
+	float: left;
 }
-
-
-
-
-
-
-
-
-#tehnika {
-	height: 860px;
-	width: 1020px;
-    background-color: #f5f5f5;
+#exp3 {
+	padding-top: 15px;
+	height: 160px;
+	width: 120px;
+	padding-left: 10px;
+	font-style: italic;
+	float: left;
 }
-#golova2 {
+.fff {
+	text-align: center;
+	color: #000;
+	font-size: 11px;
+	margin-left: -10px;
+}
+#logo3 {
+	margin-left: -10px;
+	padding-top: 10px;
+    font-size: 15px;
+    height: 170px;
+	width: 300px;
+	float: left;
+	color: #331111;
+}
+#zvonok {
+	margin-left: 15px;
+	float: left;
+}
+#descr {
+    height: 450px;
+	width: 1000px;
+	background-color: #ccFFBA;
+}
+#descr1 {
+    height: 450px;
+	width: 590px;
+	background-color: #BFFFBA;
+	float: left;
+}
+#descr2 {
+    margin-top: 50px;
+    margin-right: 10px;
+    height: 350px;
+	width: 400px;
+	background-color: #FFFFBA;
+	float: left;
+}
+.palka {
+	background-image: url(../img/palka.jpg);
+	height: 60px;
+	width: 1000px;
+	float: left;
+	font-size: 40px;
+	color: #090909;
+}
+#P-R {
+	height: 350px;
+	width: 1000px;
+	background-color: #ddFFdd;
+}
+.p1 {
+	height: 70px;
+	width: 500px;
+	background-color: #ffffdd;
+	float: left;
+}
+.p2 {
+	height: 70px;
+	width: 500px;
+    background-color: #e0e0c0;
+	float: left;
+}
+#P-R p {
+	font-family: "times new roman";
+	text-align: left;
+	margin-left: 30px;
+	margin-right: 30px;
+	height: 50px;
+	width: 440px;
+	color: #000000;
+	font-size: 16px;
+}
+#P-R img {
+	float: left;
+	margin-top: 20px;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+#levo{
+	height: 1260px;
+	width: 100px;
+	background-color: #FFF;
+	float: left;
+}
+#tovar {
+	height: 1260px;
+	width: 740px;
+	padding-left: 30px;
+	padding-right: 30px;
+    background-color: #e0e0c0;
+	float: left;
+	color: #000;
+}
+.tovar1 {
+	height: 400px;
+	width: 350px;
+	float: left;
+	padding: 10px;
+}
+#tovar img {
+	border-color: #555555;
+	border-bottom: 4px;
+    border-radius: 10px;
+}
+.tovar2 {
+	height: 30px;
+	width: 350px;
+	font-size: 26px;
+}
+.tovar3 {
 	height: 120px;
-	width: 960px;
-    background-color: #fdf;
-    float: left;
-	margin-left: 40px;
+	width: 330px;
+	text-align: justify;
+	padding-left: 10px;
+	padding-right: 10px;
 }
-#teh1 {
-	height: 330px;
-	width: 340px;
-    background-color: #daa;
-    float: left;
+#pravo{
+	height: 1260px;
+	width: 100px;
+	background-color: #FFF;
+	float: left;
 }
-#teh2 {
-	height: 330px;
-	width: 340px;
-    background-color: #ada;
-    float: left;
-}
-#teh3 {
-	height: 330px;
-	width: 340px;
-    background-color: #aad;
-    float: left;
-}
-#teh4 {
-	height: 330px;
-	width: 340px;
-    background-color: #caa;
-    float: left;
-}
-#teh5 {
-	height: 330px;
-	width: 340px;
-    background-color: #aca;
-    float: left;
-}
-#teh6 {
-	height: 330px;
-	width: 340px;
-    background-color: #aac;
-    float: left;
-}
-.teh1img {
-	height: 160px;
-	width: 300px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-.teh1text {
-	height: 170px;
-	width: 300px;
-	margin-left: 20px;
-	margin-right: 20px;
-}
-
-
-
-
-
-
-
-#onas {
+#sertific {
 	height: 350px;
-	width: 1020px;
-    background-color: #dddddd;
+	width: 1000px;
+	background-color: #fff;
+	float: left;
 }
-#infa {
+#sertific img {
+	margin: 25px;
+}
+#otzivi {
+	height: 300px;
+	width: 1000px;
+	background-color: #fff;
+	float: left;
+	color: #000;
+}
+#otz1 {
+	height: 290px;
+	width: 495px;
+	background-color: #fff;
+	float: left;
+	text-align: justify;
+	background-color: #ffffdd;
+	padding-top: 10px;
+}
+#otz2 {
+	height: 300px;
+	width: 505px;
+	background-color: #fff;
+	float: right;
+	text-align: justify;
+    background-color: #eeeecc;
+	padding-top: 10px;
+}
+#otzivi img {
+	margin-right: 10px;
+	margin-left: 10px;
+}
+#zagolov {
+	height: 25px;
+	width: 250px;
+	margin-top: 10px;
+	float: left;
+}
+#textt {
+	height: 300px;
+	width: 255px;
+	margin-top: 10px;
+	float: left;
+}
+#rabota {
+	height: 500px;
+	width: 1000px;
+	background-color: #ffaAAA;
+	float: left;
+}
+#karta {
+	height: 450px;
+	width: 1000px;
+	background-image: url(../img/karta2.jpg);
+	float: left;
+}
+#karta1 {
 	height: 350px;
-	width: 580px;
-    background-color: #dca;
-    float: left;
-	margin-left: 20px;
-	margin-right: 20px;
+	width: 400px;
+	background-color: #fffAfA;
+	float: right;
+	margin-right: 10px;
+	margin-top: 30px;
 }
 #jjj {
+    color: #331111;
     font-family: Verdana, sans-serif;
+    background-color: #ffffdd;
 	width: 400px;
 	height: 350px;
 	float: right;
 }
 
 #eee {
+    font-size: 13px;
+    font-family: Helvetica, Arial, sans-serif;
     width: 360px;
 	height: 200px;
     float: left;
+	margin-top: 20px;
 }
 #qee {
+    color: c;
     font-size: 14px;
     width: 70px;
 	height: 70px;
 	float: left;
 	margin-top:-6px;
-	margin-bottom:66px;
         
 }
 #qqe {
@@ -271,70 +308,3 @@ body {background:#sss;}
 	height: 40px;
     float: left;  
 }
-
-
-
-
-#navigacia2 {
-	height: 100px;
-	width: 1020px;
-    background-color: #ff5325;
-}
-#Nglavnaya1 {
-	height: 100px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Nuslugi1 {
-	height: 100px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Ntehnika1 {
-	height: 100px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#Ntelefon1 {
-	height: 100px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-#pusto1 {
-	height: 100px;
-	width: 150px;
-	margin-left: 10px;
-    background-color: #ae2f0d;
-    float: left;
-}
-
-
-
-
-#niz {
-	height: 120px;
-	width: 1020px;
-    background-image: url(../img/fonlogo.jpg);
-}
-#logotip1 {
-	height: 120px;
-	width: 320px;
-    float: left;
-    background-image: url(../img/logotip.png);
-}
-#telefon1 {
-	height: 80px;
-	width: 320px;
-	padding-left: 700px;
-	padding-top: 40px;
-	font-size: 22pt;
-}
-

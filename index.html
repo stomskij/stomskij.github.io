@@ -1,278 +1,84 @@
+<!doctype html>
 <html>
 <head>
-	<meta charset="utf-8" />
-	<title>HTML Document</title>
-	<link href="css/style.css" rel="stylesheet" type="text/css">
-	<link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
-	<script src="jquery-1.7.2.min.js"></script>
-<style>
-#slider-wrap{ /* Оболочка слайдера и кнопок */	width:960px;	}
-#slider{ /* Оболочка слайдера */	width:1000px;	height:540px;	overflow: hidden;  	position:relative;	border:#eee solid 10px;}
-#slider img {	width:940px;	height:360px;}
-.slide{ /* Слайд */	width:100%;	height:100%;	}
-.sli-links{ margin-top:10px;	text-align:center;}
-.sli-links .control-slide{	margin:2px;	display:inline-block;	width:16px;	height:16px;	overflow:hidden;	text-indent:-9999px;
-background:url(radioBg.png) center bottom no-repeat;}
-.sli-links .control-slide:hover{	cursor:pointer;	background-position:center center;}
-.sli-links .control-slide.active{	background-position:center top;}
-#prewbutton, #nextbutton{display:block;	width:15px;	height:100%;	position:absolute;	top:0;	overflow:hidden;	text-indent:-999px;	opacity:0.8;	z-index:3;	outline:none !important;
-background:url(arrowBg.png) left center no-repeat;	}
-#prewbutton{left:10px;}
-#nextbutton{	right:10px;
-background:url(arrowBg.png) right center no-repeat;}
-#prewbutton:hover, #nextbutton:hover{	opacity:1;}
-.z1text {
-font-size: 20px;
-color: #fff;
-background: #1800FF;
-border: 1px solid #0C00E2;
-width: 300px;
-margin-top: 370px;
-border-right: 0px;
-right: 0px;
-position: absolute;
-padding: 12px 10px;
-background: rgb(0,84,163);
-background: -moz-linear-gradient(top, rgba(0,84,163,1) 0%, rgba(0,42,160,1) 100%);
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,84,163,1)), color-stop(100%,rgba(0,42,160,1)));
-background: -webkit-linear-gradient(top, rgba(0,84,163,1) 0%,rgba(0,42,160,1) 100%);
-background: -o-linear-gradient(top, rgba(0,84,163,1) 0%,rgba(0,42,160,1) 100%);
-background: -ms-linear-gradient(top, rgba(0,84,163,1) 0%,rgba(0,42,160,1) 100%);
-background: linear-gradient(to bottom, rgba(0,84,163,1) 0%,rgba(0,42,160,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0054a3', endColorstr='#002aa0',GradientType=0 );
-}
+<meta charset="utf-8">
+<title>Цемент оптом</title>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/all.css" rel="stylesheet" type="text/css" media="all"/>
+<style type="text/css">
 </style>
-<script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="jquery.plugin.js"></script>
+<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
+<script type="text/javascript" src="js/scripts.js"></script>
+<script type="text/javascript">var SITE="<?php echo $_SERVER['SERVER_NAME'].$_SERVER['REQUEST_URI']; ?>";</script>
 
-
-(function ($) {
-var hwSlideSpeed = 700;
-var hwTimeOut = 3000;
-var hwNeedLinks = true;
-var slilinkss = true;
-
-$(document).ready(function(e) {
-	$('.slide').css(
-		{"position" : "absolute",
-		 "top":'0', "left": '0'}).hide().eq(0).show();
-	var slideNum = 0;
-	var slideTime;
-	slideCount = $("#slider .slide").size();
-	var animSlide = function(arrow){
-		clearTimeout(slideTime);
-		$('.slide').eq(slideNum).fadeOut(hwSlideSpeed);
-		if(arrow == "next"){
-			if(slideNum == (slideCount-1)){slideNum=0;}
-			else{slideNum++}
-			}
-		else if(arrow == "prew")
-		{
-			if(slideNum == 0){slideNum=slideCount-1;}
-			else{slideNum-=1}
-		}
-		else{
-			slideNum = arrow;
-			}
-		$('.slide').eq(slideNum).fadeIn(hwSlideSpeed, rotator);
-		$(".control-slide.active").removeClass("active");
-		$('.control-slide').eq(slideNum).addClass('active');
-		}
-if(hwNeedLinks){
-var $linkArrow = $('<a id="prewbutton" href="#">&lt;</a><a id="nextbutton" href="#">&gt;</a>')
-	.prependTo('#slider');
-	$('#nextbutton').click(function(){
-		animSlide("next");
-		return false;
-		})
-	$('#prewbutton').click(function(){
-		animSlide("prew");
-		return false;
-		})
-}
-	var $adderSpan = '';
-	$('.slide').each(function(index) {
-			$adderSpan += '<span class = "control-slide">' + index + '</span>';
-		});
-	$('<div class ="sli-links">' + $adderSpan +'</div>').appendTo('#slider-wrap');
-	$(".control-slide:first").addClass("active");
-	$('.control-slide').click(function(){
-	var goToNum = parseFloat($(this).text());
-	animSlide(goToNum);
-	});
-	var pause = false;
-	var rotator = function(){
-			if(!pause){slideTime = setTimeout(function(){animSlide('next')}, hwTimeOut);}
-			}
-	$('#slider-wrap').hover(
-		function(){clearTimeout(slideTime); pause = true;},
-		function(){pause = false; rotator();
-		});
-	rotator();
-
-
-if (!slilinkss)  $('.sli-links').css({"display" : "none"});
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox.css">
+<script type="text/javascript" src="fancybox/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="fancybox/jquery.easing.1.3.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function() { 
+$("a.first").fancybox(); 
+$("a.two").fancybox(); 
+$("a.video").fancybox({"frameWidth":1560,"frameHeight":340}); 
+$("a.content").fancybox({"frameWidth":800,"frameHeight":300}); 
 });
-})(jQuery);
-
 </script>
 </head>
+
 <body>
 <div id="fonn">
-	<div id="logo">
-		<div id="logotip">
-		</div>
-		<div id="telefon">
-			<p> 89127449257 </p>
-		</div>
-	</div>
-	<div id="navigacia">
-		<a href="#fonn">
-			<div id="Nglavnaya">
+    <div id="telo">
+        <div class="logo">
+	        <div id="logo1">
+			    <img src="img/logo01.png" WIDTH="300" HEIGHT="100"/>
+				<div id="optovie">
+					Оптовые поставки пиломатериалов</div> <div id="severo"> по Северо-Западному региону
+				</div>
 			</div>
-		</a>
-		<a href="#uslugi">
-			<div id="Nuslugi">
+			<div id="logo2">
+				<div id="exp1">
+					<img src="img/logo21.png" WIDTH="110" HEIGHT="70"/>
+					<div class="fff">
+					100% Гарантия</div> <div class="fff">возврата денег
+				</div>
+				</div>
+				<div id="exp2">
+					<img src="img/znak.png" WIDTH="80" HEIGHT="70"/>
+					<div class="fff">
+					Все товары</div> <div class="fff">соответствуют ГОСТ
+				</div>
+				</div>
+				<div id="exp3">
+					<img src="img/valdai.png" WIDTH="120" HEIGHT="70"/>
+					<div class="fff"></div> <div class="fff">Доставка в течении суток
+				</div>
+				</div>
 			</div>
-		</a>
-		<a href="#tehnika">
-			<div id="Ntehnika">
+			<div id="logo3">
+				<div id="zvonok">
+					<img src="img/callc.png" WIDTH="106" HEIGHT="160"/>
+				</div>
+				<div style="padding-top:10px;">
+					<b><p style="color:#cc2222; font-size: 16px;">Звоните прямо сейчас!!!</p>
+					<p>8 (911) 797 39 94</p>
+					<p>8 (952) 215 49 14</p></b>
+					
+				</div>
 			</div>
-		</a>
-		<a href="#onas">
-			<div id="Ntelefon">
+	    </div>
+		
+		<div id="descr">
+		    <div id="descr1">
+			    <img src="img/11314912.jpg" WIDTH="1000" HEIGHT="450"/>
 			</div>
-		</a>
-		<a href="#niz">
-			<div id="pusto">
-			</div>
-		</a>
-	</div>
-	<div id="galereya">
-		<div id="slider-wrap">
-		<div id="slider">
-		<div class="slide" style="background: url(img/001.jpg) no-repeat center; background-size: cover;"><div class="z1text">Подпись к тексту</div></div>
-		<div class="slide" style="background: url(img/002.jpg) no-repeat center; background-size: cover;"><div class="z1text"><div style="border-bottom: 1px dashed #2673FF;margin-bottom: 14px;padding-bottom: 4px;">Подпись к тексту</div><div style="font-size: 12px;"><img src="img/004.jpg" style="float: left; width: 60px;height: auto;margin-right: 10px;border: 2px solid #FFFFFF;">Может быть абсолютно любое содержимое, которое можно оформить как угодно: ссылки, миниатюры, картинки, видео!</div></div></div>
-		<div class="slide" style="background: url(img/003.jpg) no-repeat center; background-size: cover;"><iframe width="100%" height="100%" src="http://www.youtube.com/embed/LDZX4ooRsWs?list=PLH6pfBXQXHECUaIU3bu9rjG2L6Uhl5A2q" frameborder="0" allowfullscreen></iframe></div>
-		<div class="slide" style="background: url(img/004.jpg) no-repeat center; background-size: cover;"></div>
-		</div>
-		</div>
-	</div>
-	<div id="uslugi">
-		<div id="golova1">
-			<h2>Lorem Ipsum</h2>
-		</div>
-		<div id="kran">
-			<div class="usl1img">
-				<img src="img/usl1.jpg" WIDTH="210" HEIGHT="160"/>
-			</div>	
-			<div class="usl1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="bur">
-			<div class="usl1img">
-				<img src="img/usl1.jpg" WIDTH="210" HEIGHT="160"/>
-			</div>	
-			<div class="usl1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>	
-		</div>
-		<div id="perevoz">
-			<div class="usl1img">
-				<img src="img/usl1.jpg" WIDTH="210" HEIGHT="160"/>
-			</div>	
-			<div class="usl1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="eskav">
-			<div class="usl1img">
-				<img src="img/usl1.jpg" WIDTH="210" HEIGHT="160"/>
-			</div>	
-			<div class="usl1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>	
-		</div>
-		<div id="knopkaone">
-			<a href="https://youtu.be/ILM-JbWKn1I"  target="_blank"><button>Подробнее</button></a>
-		</div>я
-	</div>
-	<div id="tehnika">
-		<div id="golova2">
-			<h2>Lorem Ipsum</h2>
-			<p>Lorem Ipsum</p>
-		</div>
-		<div id="teh1">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="teh2">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="teh3">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="teh4">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="teh5">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="teh6">
-			<div class="teh1img">
-				<img src="img/teh1.jpg" WIDTH="300" HEIGHT="160"/>
-			</div>
-			<div class="teh1text">
-				<h3>Lorem Ipsum</h3>
-				<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
-			</div>
-		</div>
-		<div id="knop1">
-		</div>
-	</div>
-	<div id="onas">
-		<div id="infa">
-			<h3>Lorem Ipsum</h3>
-			<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации. Практический опыт показывает, что постоянный количественный рост и сфера нашей активности влечет за собой процесс внедрения и модернизации системы масштабного изменения ряда параметров! Повседневная практика показывает, что рамки и место обучения кадров требует от нас анализа соответствующих условий активизации. Равным образом постоянное информационно-техническое обеспечение нашей деятельности в значительной степени обуславливает создание форм воздействия.</p>
-		</div>
-		<div id="jjj">
+		    <div id="descr2">
+				<div id="jjj">
 					<form action="formdata.php" method="POST" name="form1">
 					<fieldset>
 					<div id="eee">
-					<p>Значимость этих проблем настолько очевидна, что начало повседневной работы по формированию позиции создаёт предпосылки качественно новых шагов для соответствующих условий активизации</p>
+					<h1 style="color:#550000">Расчитайте стоимость и уточните всю необходимую информацию, заказав звонок специалиста!</h1>
 					</div>		
 					<div id="qee">
 						<p><label><b>ФИО:</b></label></p>
@@ -288,37 +94,264 @@ if (!slilinkss)  $('.sli-links').css({"display" : "none"});
 					</div>
 					</fieldset>
 				   </form>	
+			
+				</div>
+			</div>
 		</div>
+		
+		<div class="palka">
+			<a>Мы производим:</a>
+		</div>
+		<div id="levo">
+		</div>
+		<div id="tovar">
+			<div class="tovar1">
+				<img src="img/rabota/brus1.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Брус
+				</div>
+				<div class="tovar3">
+					<p>Обычный брус представляет собой бревно, обработанное на четыре канта.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div>
+				</div>
+			</div>
+			<div class="tovar1">
+				<img src="img/rabota/brus2.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Брусок
+				</div>
+				<div class="tovar3">
+					<p>Толщина не превышает 10 см, а ширина не более чем в 2 раза превосходит толщину.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div>
+				</div>
+			</div>
+			<div class="tovar1">
+				<img src="img/rabota/doska1.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Доска строительная
+				</div>
+				<div class="tovar3">
+					 <p>Наиболее распространенным сырьем для строительной доски является сосна и ель.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div> 
+				</div>
+			</div>
+			<div class="tovar1">
+				<img src="img/rabota/doska2.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Доска деловая
+				</div>
+				<div class="tovar3">
+					<p>Имеет идеально ровную поверхность, не требующую отдельной обработки.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div>
+				</div>
+			</div>
+			<div class="tovar1">
+				<img src="img/rabota/imit1.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Имитатор бруса
+				</div>
+				<div class="tovar3">
+					<p>Чтобы получить комфрт деревянного дома, достаточно использовать имитатор бруса.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div>
+				</div>
+			</div>
+			<div class="tovar1">
+				<img src="img/rabota/imit2.jpg" WIDTH="350" HEIGHT="250"/>
+				<div class="tovar2">
+					Имитатор бревна
+				</div>
+				<div class="tovar3">
+					<p>Благодаря имитору бревна не составит труда обновить, внешний вид здания.
+					</p>
+					<div class="but_t" style="position: static; bottom: -64px; z-index: 3; ">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="pravo">
+		</div>
+		<div class="palka">
+		    Проблемы наших клиентов:		
+		</div>
+		<div id="P-R">
+			<div class="p1">
+			    <img src="img/-.png" WIDTH="32" HEIGHT="32"/>
+				<p>Множество организаций занижают цену на пиломатериалы за счет ухудшения качества</p>
+			</div>
+			<div class="p1">
+			    <img src="img/+.png" WIDTH="32" HEIGHT="32"/>
+				<p>У нас вы можете бесплатно получить пробные образцы пиломатериалов</p>
+			</div>
+			<div class="p2">
+			    <img src="img/-.png" WIDTH="32" HEIGHT="32"/>
+				<p>Клиенты склонны сомневаться в продукции, которой они ранее не пользовались</p>
+			</div>
+			<div class="p2">
+			    <img src="img/+.png" WIDTH="32" HEIGHT="32"/>
+				<p>Вы можете посетить производсто и лично присутствовать при погрузке</p>
+			</div>
+			<div class="p1">
+			    <img src="img/-.png" WIDTH="32" HEIGHT="32"/>
+				<p>В стоимость товара зачастую входят посреднические услуги</p>
+			</div>
+			<div class="p1">
+			    <img src="img/+.png" WIDTH="32" HEIGHT="32"/>
+				<p>Покупая пиломатериалы от производителя, вы гарантированно получаете низкие цены!</p>
+			</div>
+			<div class="p2">
+			    <img src="img/-.png" WIDTH="32" HEIGHT="32"/>
+				<p>Невыполнение сроков поставки из-за отсутствия товара в наличии</p>
+			</div>
+			<div class="p2">
+			    <img src="img/+.png" WIDTH="32" HEIGHT="32"/>
+				<p>Такое бывает, когда организация имеет лишь одну пилораму. У нас их четыре!</p>
+			</div>
+			<div class="p1">
+			    <img src="img/-.png" WIDTH="32" HEIGHT="32"/>
+				<p>Халатный подход водителей к делу: задержки, потеря или подмен товара в пути</p>
+			</div>
+			<div class="p1">
+			    <img src="img/+.png" WIDTH="32" HEIGHT="32"/>
+				<p>На наших машинах установлены GPS-отслеживание и датчики нагрузки на ось</p>
+			</div>
+		</div>
+		<div class="palka">
+		    Сертификаты качества:		
+		</div>
+		<div id="sertific">
+			<div align="center">
+
+				<a class="two" rel="group" title="." href="img/sertif/sertif1.jpg"><img src="img/sertif/sertif1.jpg" WIDTH="220" HEIGHT="300" border="0"/></a>
+
+				<a class="two" rel="group" title="." href="img/sertif/sertif2.jpg"><img src="img/sertif/sertif2.jpg" WIDTH="220" HEIGHT="300" border="0"/></a>
+
+				<a class="two" rel="group" title="." href="img/sertif/sertif3.jpg"><img src="img/sertif/sertif3.jpg" WIDTH="220" HEIGHT="300" border="0"/></a>
+
+			</div>
+		</div>
+		<div class="palka">
+		    Отзывы о нас:		
+		</div>
+		<div id="otzivi">
+			<div id="otz1">
+				<img src="img/otizivi/otz1.jpg" WIDTH="225" HEIGHT="260" align="left"/>
+				<div id="zagolov">
+					<a style="font-size:16px">Компания<b> ЗАО "СевПромСтрой"</b></a>
+				</div>
+				<div id="textt" style="width:245px">
+					<p>Заключили договор на поэтапную поставку пиломатериалов на наш объект. Все поставки были выполнены по договоренности. Объем сделки 740 тыс. рублей. Качество отличное, цена нас устроила. </p>
+					<p>С уважением:</p>
+					<p>Директор компании «Бураков Г. И.»</p>
+				</div>
+			</div>
+			<div id="otz2">
+				<img src="img/otizivi/otz2.jpg" WIDTH="225" HEIGHT="260" align="left"/>
+				<div id="zagolov">
+					<a style="font-size:16px">Компания <b>OOO "УМТ "С"</b></a>
+				</div>
+				<div id="textt">
+					<p>На строительство дачного комплекса "Березки" срочно пришлось менять поставщика бруса из-за невыполнения условий договора прошлым поставщиком. В кратчайшие сроки мы заключили договор и получили брус. Сотрудничеством остались довольны.</p>
+					<p>Менеджер по закупкам «Авдеев Н. Т.»</p>
+				</div>
+			</div>
+		</div>
+		<div class="palka">
+			<a>Как мы работаем:</a>
+		</div>
+		<div id="rabota">
+			<img src="img/rabota/rabota1.png" WIDTH="1000" HEIGHT="500"/>
+		</div>
+		<div class="palka">
+			<a>Наши контакты:</a>
+		</div>
+		<div id="karta">
+			<div id="karta1">
+				<div id="jjj">
+					<form action="formdata.php" method="POST" name="form1">
+					<fieldset>
+					<div id="eee">
+						<h1 style="color:#331111">Рассчитайте стоимость и уточните всю необходимую информацию, заказав звонок специалиста!</h1>
+					</div>		
+						<div id="qee">
+							<p><label><b>ФИО:</b></label></p>
+							<p><label><b>Телефон:</b></label></p>
+						</div>
+						<div id="qqe">
+							<input maxlength="40" size="40" class="inputs" type="text" name="name" value="Введите ФИО*" onfocus="if(this.value == 'Введите ФИО*') {this.value = '';}  $(this).css('color','#333333');" onblur="if (this.value == '') {this.value = 'Введите ФИО*';}"><br/>
+							<input maxlength="10" size="40" class="inputs" type="text" name="phone" value="Введите телефон*" onfocus="if(this.value == 'Введите телефон*') {this.value = '';} $(this).css('color','#333333');" onblur="if (this.value == '') {this.value = 'Введите телефон*';}">
+							<div class="but2"><h3 style="display: none;">
+							Заявка на обратный звонок!</h3>
+							</div>
+						</div>
+						<div id="qqq">
+						</div>
+					</fieldset>
+				   </form>	
+			
+				</div>
+			</div>
+		</div>
+		<div class="logo">
+	        <div id="logo1">
+			    <img src="img/logo01.png" WIDTH="300" HEIGHT="100"/>
+				<div id="optovie">
+					Оптовые поставки пиломатериалов</div> <div id="severo"> по Северо-Западному региону
+				</div>
+			</div>
+			<div id="logo2">
+				<div id="exp1">
+					<img src="img/logo21.png" WIDTH="110" HEIGHT="70"/>
+					<div class="fff">
+					100% Гарантия</div> <div class="fff">возврата денег
+				</div>
+				</div>
+				<div id="exp2">
+					<img src="img/znak.png" WIDTH="80" HEIGHT="70"/>
+					<div class="fff">
+					Все товары</div> <div class="fff">соответствуют ГОСТ
+				</div>
+				</div>
+				<div id="exp3">
+					<img src="img/valdai.png" WIDTH="120" HEIGHT="70"/>
+					<div class="fff">
+					Все товары</div> <div class="fff">соответствуют ГОСТ
+				</div>
+				</div>
+			</div>
+			<div id="logo3">
+				<div id="zvonok">
+					<img src="img/callc.png" WIDTH="106" HEIGHT="160"/>
+				</div>
+				<div style="padding-top:10px;">
+					<p style="color:#cc2222; font-size: 16px;">Звоните прямо сейчас!!!</p>
+					<b><p>8 (911) 797 39 94</p>
+					<p>8 (952) 215 49 14</p></b>
+					
+				</div>
+			</div>
+	    </div>
 	</div>
-	<div id="navigacia2">
-		<a href="#fonn">
-			<div id="Nglavnaya1">
-			</div>
-		</a>
-		<a href="#uslugi">
-			<div id="Nuslugi1">
-			</div>
-		</a>
-		<a href="#tehnika">
-			<div id="Ntehnika1">
-			</div>
-		</a>
-		<a href="#onas">
-			<div id="Ntelefon1">
-			</div>
-		</a>
-		<a href="#niz">
-			<div id="pusto1">
-			</div>
-		</a>
-	</div>
-	<div id="niz">
-	<div id="logo">
-		<div id="logotip1">
-		</div>
-		<div id="telefon1">
-			<p> 89127449257 </p>
-		</div>
+</div>
+<div class="darker">
+	<div class="closer"></div>
+	<div class="okno">
+		<div class="closeka">×</div>
+		<h2>Заказ звонка</h2>
+		<div id="result"></div>
+		<input maxlength="40" class="inputs" type="text" name="name" value="Введите имя*" onfocus="if(this.value == 'Введите имя*') {this.value = '';}  $(this).css('color','#333333');" onblur="if (this.value == '') {this.value = 'Введите имя*';}">
+		<input maxlength="40" class="inputs" type="text" name="phone" value="Введите телефон*" onfocus="if(this.value == 'Введите телефон*') {this.value = '';} $(this).css('color','#333333');" onblur="if (this.value == '') {this.value = 'Введите телефон*';}">
+		<input maxlength="40" class="inputs" type="text" name="email" value="E-mail" onfocus="if(this.value == 'E-mail') {this.value = '';}  $(this).css('color','#333333');" onblur="if (this.value == '') {this.value = 'E-mail';}">
+		<div class="but">отправить</div>
 	</div>
 </div>
 </body>
