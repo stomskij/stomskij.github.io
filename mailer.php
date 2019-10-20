@@ -15,7 +15,7 @@ function send_mail()
 		$mail = new PHPMailer();
 		$mail->From = "киндер-подарок.рф";
 		$mail->FromName = $_REQUEST['name'];
-		$mail->AddAddress('kinder-united@mail.ru');
+		$mail->AddAddress('stomskij@gmail.com');
 		$mail->IsHTML(true);
 		$mail->Subject = "E-mail с сайта";
 
