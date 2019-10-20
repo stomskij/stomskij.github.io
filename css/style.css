@@ -1,0 +1,340 @@
+body {background:#sss;}
+#fonn {
+	height: 2660px;
+	width: 1020px;
+	margin-right: auto;
+	margin-left: auto;
+	margin-bottom: 10px;
+    background-color: #e0e0c0;
+}
+#logo {
+	height: 120px;
+	width: 1020px;
+    background-image: url(../img/fonlogo.jpg);
+}
+#logotip {
+	height: 120px;
+	width: 320px;
+    float: left;
+    background-image: url(../img/logotip.png);
+}
+#telefon {
+	height: 80px;
+	width: 320px;
+	padding-left: 700px;
+	padding-top: 40px;
+	font-size: 22pt;
+}
+
+
+#navigacia {
+	height:  80px;
+	width: 1020px;
+    background-color: #ff5325;
+}
+#Nglavnaya {
+	height: 80px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Nuslugi {
+	height: 80px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Ntehnika {
+	height: 80px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Ntelefon {
+	height: 80px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#pusto {
+	height: 80px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+
+
+
+
+#galereya {
+	height: 600px;
+	width: 1020px;
+    background-color: #eed5c0;
+}
+
+
+
+#uslugi {
+	height: 540px;
+	width: 1000px;
+    background-color: #000
+}
+#golova1 {
+	height: 70px;
+	width: 960px;
+    background-color: #fdf;
+    float: left;
+	margin-left:  50px;
+	margin-right: 40px;
+}
+#kran {
+	height: 400px;
+	width: 250px;
+    background-color: #ddd;
+    float: left;
+}
+#bur {
+	height: 400px;
+	width: 250px;
+    background-color: #eee;
+    float: left;
+}
+#perevoz {
+	height: 400px;
+	width: 250px;
+    background-color: #ccc;
+    float: left;
+}
+#eskav {
+	height: 400px;
+	width: 250px;
+    background-color: #aaa;
+    float: left;
+}
+#knopkaone {
+	height: 70px;
+	background-color: red;
+	float: left;
+	padding: 0px;
+	
+	width: 1020px;
+}
+
+#knopkaone button{
+/*	padding-left: 00px;*/
+	margin-top: 15px;
+	margin-left: 900px;
+	border-radius: 8px;
+	height: 40px;
+	color: #000;
+	background-color: #08cc0f;
+	cursor: pointer;
+}
+
+#knopkaone button:hover{
+	color: red;
+	background-color: yellow;
+}	
+.usl1img {
+	height: 160px;
+	width: 210px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.usl1text {
+	height: 240px;
+	width: 210px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+
+#tehnika {
+	height: 860px;
+	width: 1020px;
+    background-color: #f5f5f5;
+}
+#golova2 {
+	height: 120px;
+	width: 960px;
+    background-color: #fdf;
+    float: left;
+	margin-left: 40px;
+}
+#teh1 {
+	height: 330px;
+	width: 340px;
+    background-color: #daa;
+    float: left;
+}
+#teh2 {
+	height: 330px;
+	width: 340px;
+    background-color: #ada;
+    float: left;
+}
+#teh3 {
+	height: 330px;
+	width: 340px;
+    background-color: #aad;
+    float: left;
+}
+#teh4 {
+	height: 330px;
+	width: 340px;
+    background-color: #caa;
+    float: left;
+}
+#teh5 {
+	height: 330px;
+	width: 340px;
+    background-color: #aca;
+    float: left;
+}
+#teh6 {
+	height: 330px;
+	width: 340px;
+    background-color: #aac;
+    float: left;
+}
+.teh1img {
+	height: 160px;
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+.teh1text {
+	height: 170px;
+	width: 300px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+
+
+
+
+
+
+#onas {
+	height: 350px;
+	width: 1020px;
+    background-color: #dddddd;
+}
+#infa {
+	height: 350px;
+	width: 580px;
+    background-color: #dca;
+    float: left;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#jjj {
+    font-family: Verdana, sans-serif;
+	width: 400px;
+	height: 350px;
+	float: right;
+}
+
+#eee {
+    width: 360px;
+	height: 200px;
+    float: left;
+}
+#qee {
+    font-size: 14px;
+    width: 70px;
+	height: 70px;
+	float: left;
+	margin-top:-6px;
+	margin-bottom:66px;
+        
+}
+#qqe {
+    width: 280px;
+	height: 70px;
+    float: left;    
+}
+#qqq {
+    width: 30px;
+	height: 40px;
+    float: left;  
+}
+
+
+
+
+#navigacia2 {
+	height: 100px;
+	width: 1020px;
+    background-color: #ff5325;
+}
+#Nglavnaya1 {
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Nuslugi1 {
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Ntehnika1 {
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#Ntelefon1 {
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+#pusto1 {
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+    background-color: #ae2f0d;
+    float: left;
+}
+
+
+
+
+#niz {
+	height: 120px;
+	width: 1020px;
+    background-image: url(../img/fonlogo.jpg);
+}
+#logotip1 {
+	height: 120px;
+	width: 320px;
+    float: left;
+    background-image: url(../img/logotip.png);
+}
+#telefon1 {
+	height: 80px;
+	width: 320px;
+	padding-left: 700px;
+	padding-top: 40px;
+	font-size: 22pt;
+}
+
